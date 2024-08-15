@@ -1,7 +1,7 @@
 function factorial(n) {
-  let value = n;
-  for (let i = 1; i < n && n !== 0; i++) {
-    value *= n - i;
+  let value = 1;
+  for (let i = 2; i <= n; i++) {
+    value *= i;
   }
-  return n !== 0 ? value : 1;
+  return value;
 }
